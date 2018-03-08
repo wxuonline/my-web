@@ -1,0 +1,12 @@
+.wrapper {width: 100%;height: auto;padding-top: 60px;}
+.header {width: 100%;min-width: 1200px;height: 50px;z-index: 90;left: 0;top: 0;-webkit-box-shadow: 0 1px 3px 0 rgba(0,34,77,.1);-moz-box-shadow: 0 1px 3px 0 rgba(0,34,77,.1);box-shadow: 0 1px 3px 0 rgba(0,34,77,.1);}
+.header .head {width: 1200px;height: 100%;justify-content: space-between;}
+.head .logo {width: auto;height: 30px;font-size: 18px;line-height: 30px;padding: 0 10px;font-weight: bold;margin-right: 30px;background: url('../assets/images/fire.jpg') no-repeat center;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.head .nav {width: auto;height: 30px;}
+.nav a{display: block;width: auto;height: 100%;float: left;padding: 0 15px;margin: 0 5px;font-size: 16px;line-height: 30px;}
+.nav a.active{color: #20bcff;}
+.head  .site-search{justify-content: flex-end;width: auto;height: 30px;}
+.site-search .search-form{border: 1px solid #e6e6e6;background-color: rgba(227,231,236,.2);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;border-radius: 2px;}
+.search-form input{width: 180px;padding: 0 10px;color: #444;height: 28px;line-height: 28px;}
+.search-form .search-btn{background: url('../assets/images/mag.png') no-repeat center;width: 28px;height: 28px;cursor: pointer;}
+

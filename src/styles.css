@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* reset+css库 */
+@charset "utf-8";
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, figure{margin: 0;}
+a{ color: #444; text-decoration:none;cursor: pointer;}
+a:hover{color: #20bcff;}
+body{word-wrap:break-word;color: #444;}
+body,input,button,textarea{font: 12px/24px "微软雅黑","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";}
+input,button,select,textarea{padding: 0;margin: 0;border:none;background: none;outline: none;color: #444;}
+input{-webkit-appearance: none;appearance: none;}
+textarea{resize: none;}
+ul,ol,li,dl{list-style:none;margin:0; padding:0;}
+h1,h2,h3,h4,h5{font-weight:normal;}
+i,em,b{font-style:normal;font-weight:normal;list-style:none;}
+mark{background: none;}
+
+.fl{float: left;}.fr{float: right;}.tc{text-align:center;}.tr{text-align:right;}.tl{text-align:left;}.cf{color:#fff;}.bf{background: #fff;}
+.oh{overflow: hidden;}.pr{position: relative;}.pa{position: absolute;}.pf{position: fixed;}.toh{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.op{opacity: 0;}.ma{margin: 0 auto;}.bsb{box-sizing: border-box;}.bsc{box-sizing: content-box;}.vm{vertical-align:middle;}.vt{vertical-align:top;}.vb{vertical-align:bottom;}
+.dn{display: none;}.db{display: block;}.dtc{display: table-cell;}.df{display:-webkit-box;display:-moz-box;display:-ms-box;display:-webkit-flex;display: flex;}
+.dfjcc{webkit-box-pack: center;-moz-justify-content: center;-webkit-justify-content: center;justify-content: center;}
+.dfaic{-webkit-box-align: center;-moz-align-items: center;-webkit-align-items: center;align-items: center;}
+
+::-webkit-input-placeholder{color: #999;}
+:input-placeholder{color: #999;}
+body{background-color: #f2f2f2;}
+
+.nodata{width: 100%;height: auto;padding: 30px 20px;color: #666;}

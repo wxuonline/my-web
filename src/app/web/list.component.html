@@ -1,0 +1,20 @@
+
+<div class="main pr oh ma">
+    <article class="article pr oh">
+        <div class="blogs pr oh bf">
+            <ul class="blogs-list pr oh" *ngIf="article.length; else elseNoData">
+                <li *ngFor="let blog of article" (click)="gotoDetail(blog)">
+                    <h2><a>{{blog.title}}</a></h2>
+                    <p><time>{{blog.createdAt}}</time></p>
+                </li>
+            </ul>
+            <ng-template #elseNoData>
+                <div class="nodata pr oh bsb">暂无数据</div>
+            </ng-template>
+        </div>
+    </article>
+    <aside class="aside pa oh">
+        <my-personal></my-personal>
+    </aside>
+</div>
+
