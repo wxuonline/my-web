@@ -7,11 +7,11 @@ import { Article } from './article';
 
 @Injectable()
 export class ArticleService {
-    private blogsUrl = 'api/websList';
+    private websUrl = 'api/websList';
     constructor(private http: Http) {}
 
     getBlogs(): Promise<Article[]> {
-        return this.http.get(this.blogsUrl)
+        return this.http.get(this.websUrl)
                    .toPromise()
                    .then(reponse => reponse.json().data as Article[])
                    .catch(this.handleError);
@@ -23,7 +23,7 @@ export class ArticleService {
     }
 
     getBlog(id: number): Promise<Article> {
-        const url = `${this.blogsUrl}/${id}`;
+        const url = `${this.websUrl}/${id}`;
         return this.http.get(url)
                    .toPromise().then(response => response.json().data as Article)
                    .catch(this.handleError);

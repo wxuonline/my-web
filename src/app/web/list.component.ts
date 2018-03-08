@@ -20,11 +20,10 @@ export class WebListComponent {
     ) {}
 
     ngOnInit(): void {
-        this.articleService.getBlogs().then(article => this.article = article.slice(1, 10));
+        this.articleService.getBlogs().then(article => this.article = article.slice(0, 9));
     }
 
-    gotoDetail(article: Article): void {
-        this.selectedArticle = article;
-        this.router.navigate(['./webs', this.selectedArticle.id]);
+    gotoDetail(string: string): void {
+        this.router.navigate(['./webs', string]);
     }
 }

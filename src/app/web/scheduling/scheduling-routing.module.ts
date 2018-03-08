@@ -1,24 +1,24 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { Resume2018Component } from './resume-2018.component';
+import { WebArticleComponent } from './article.component';
 
-const resumeRoutes: Routes = [{
+const articleRoutes: Routes = [{
     path: '',
-    component: Resume2018Component,
+    component: WebArticleComponent,
     children: [{
         path: '',
         children: [
-            { path: '', component: Resume2018Component }
+            { path: '', component: WebArticleComponent }
         ]
     }]
 }]
 
 @NgModule({
     imports: [
-        RouterModule.forChild(resumeRoutes)
+        RouterModule.forChild(articleRoutes)
     ],
     exports: [ RouterModule ]
 })
 
-export class ResumeRoutingModule {}
+export class schedulingRoutingModule {}

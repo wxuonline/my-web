@@ -4,8 +4,8 @@ import { Location } from '@angular/common';
 
 import 'rxjs/add/operator/switchMap';
 
-import { Article } from './article';
-import { ArticleService } from './list.service';
+import { Article } from '../article';
+import { ArticleService } from '../list.service';
 
 @Component({
     selector: 'web-article',

@@ -11,10 +11,8 @@ import { BlogsListComponent } from './blogs/list.component';
 import { BlogsService } from './blogs/list.service';
 import { WebListComponent } from './web/list.component';
 import { ArticleService } from './web/list.service';
-import { WebArticleComponent } from './web/article.component';
 import { PersonalComponent } from './personal/personal.component';
 import { AppRoutingModule } from './app-routing.module';
-// import { Resume2018Component } from './resume/resume-2018.component';
 
 @NgModule({
     imports: [
@@ -29,8 +27,6 @@ import { AppRoutingModule } from './app-routing.module';
         BlogsListComponent,
         PersonalComponent,
         WebListComponent,
-        WebArticleComponent,
-        // Resume2018Component,
     ],
     providers: [ BlogsService, ArticleService ],
     bootstrap: [ AppComponent ]
