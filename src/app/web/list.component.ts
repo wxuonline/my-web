@@ -24,6 +24,6 @@ export class WebListComponent {
     }
 
     gotoDetail(string: string): void {
-        this.router.navigate(['./webs', string]);
+        // this.router.navigate(['./webs', string]);
     }
 }

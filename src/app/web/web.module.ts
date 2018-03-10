@@ -1,17 +1,17 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
-// import { WebArticleComponent }      from './article.component';
-
-// import { schedulingRoutingModule }       from './scheduling-routing.module';
+import { WebListComponent }      from './list.component';
+import { WebRoutingModule }       from './web-routing.module';
 
 @NgModule({
     imports: [
         CommonModule,
-        // schedulingRoutingModule,
+        WebRoutingModule,
     ],
     declarations: [
-        // WebArticleComponent,
+        WebListComponent,
     ]
 })
 export class WebModule {}
+

@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { BlogsListComponent } from './blogs/list.component';
-import { WebListComponent } from './web/list.component';
 
 const routes: Routes = [
     {
       path: '',
-      redirectTo: '/webs',
+      redirectTo: '/blogs',
       pathMatch: 'full'
     },
     {
@@ -16,13 +15,8 @@ const routes: Routes = [
     },
     {
         path: 'webs',
-        component: WebListComponent
+        loadChildren: 'app/web/web.module#WebModule',
     },
-    // {
-    //     path: 'webs/:route',
-    //     loadChildren: 'app/web/scheduling.module#WebSchedulingModule',
-    //     // component: WebArticleComponent
-    // },
     {
         path: 'resume2018',
         loadChildren: 'app/resume/resume.module#ResumeModule',
