@@ -13,6 +13,7 @@ export class BlogsListComponent {
     blogs: Blog[] = [];
     constructor(private blogsService: BlogsService) {}
     ngOnInit(): void {
-        this.blogsService.getBlogs().then(blogs => this.blogs = blogs.slice(1, 10));
+        // this.blogsService.getBlogs().then(blogs => this.blogs = blogs.slice(0, 9));
+        this.blogsService.getBlogs().then(blogs => console.log(this.blogs));
     }
 }
