@@ -3,7 +3,7 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService {
     createDb() {
         const blogsList = [
-            // { id: 11, category: '前端', title: "博客标题标题标题标题标题标题", content: "博客内容内容内容内容内容内容内容内容内容内容内容内容内容", createdAt: "2018-01-25 11:11", viewsCount: 180, reviewCount: 18 },
+            { id: 11, category: '前端', title: "博客标题标题标题标题标题标题", content: "博客内容内容内容内容内容内容内容内容内容内容内容内容内容", createdAt: "2018-01-25 11:11", viewsCount: 180, reviewCount: 18 },
         ];
 
         const websList = [

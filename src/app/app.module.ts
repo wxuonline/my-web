@@ -9,6 +9,8 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { BlogsListComponent } from './blogs/list.component';
 import { BlogsService } from './blogs/list.service';
+import { WebListComponent } from './web/list.component';
+import { ArticleService } from './web/list.service';
 import { PersonalComponent } from './personal/personal.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -23,9 +25,10 @@ import { AppRoutingModule } from './app-routing.module';
     declarations: [
         AppComponent,
         BlogsListComponent,
+        WebListComponent,
         PersonalComponent,
     ],
-    providers: [ BlogsService ],
+    providers: [ BlogsService, ArticleService ],
     bootstrap: [ AppComponent ]
 })
 

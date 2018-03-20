@@ -7,7 +7,7 @@ import { ArticleService } from './list.service';
 @Component({
     selector: 'web-list',
     templateUrl: './list.component.html',
-    styleUrls: [ './list.component.css' ]
+    styleUrls: [ './list.component.css' ],
 })
 
 export class WebListComponent {
@@ -20,7 +20,8 @@ export class WebListComponent {
     ) {}
 
     ngOnInit(): void {
-        this.articleService.getBlogs().then(article => this.article = article.slice(0, 9));
+        this.articleService.getBlogs().then(article => console.log(article));
+        // this.articleService.getBlogs().then(article => this.article = article.slice(0, 9));
     }
 
     gotoDetail(string: string): void {

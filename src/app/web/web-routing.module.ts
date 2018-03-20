@@ -5,16 +5,16 @@ import { WebListComponent } from './list.component';
 
 
 const webRoutes: Routes = [
-    {
-        path: '',
-        component: WebListComponent,
-        children: [{
-            path: '',
-            children: [
-                { path: '', component: WebListComponent }
-            ]
-        }]
-    },
+    // {
+    //     path: '',
+    //     component: WebListComponent,
+    //     children: [{
+    //         path: '',
+    //         children: [
+    //             { path: '', component: WebListComponent }
+    //         ]
+    //     }]
+    // },
     // {
     //     path: 'resume2018',
     //     loadChildren: 'app/resume/resume.module#ResumeModule',

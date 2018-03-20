@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { BlogsListComponent } from './blogs/list.component';
+import { WebListComponent } from './web/list.component';
 
 const routes: Routes = [
     {
       path: '',
-      redirectTo: '/blogs',
+      redirectTo: '/webs',
       pathMatch: 'full'
     },
     {
@@ -15,7 +16,7 @@ const routes: Routes = [
     },
     {
         path: 'webs',
-        loadChildren: 'app/web/web.module#WebModule',
+        component: WebListComponent
     },
     {
         path: 'resume2018',
