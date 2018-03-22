@@ -15,4 +15,3 @@ import { WebRoutingModule }       from './web-routing.module';
     ]
 })
 export class WebModule {}
-
