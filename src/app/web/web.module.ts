@@ -14,4 +14,4 @@ import { WebRoutingModule }       from './web-routing.module';
         WebListComponent,
     ]
 })
-export class WebModule {}
+export class WebModule { }
