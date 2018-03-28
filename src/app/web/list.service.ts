@@ -13,7 +13,7 @@ export class ArticleService {
     getBlogs(): Promise<Article[]> {
         return this.http.get(this.websUrl)
                    .toPromise()
-                   .then(reponse => reponse.json().data as Article[])
+                   .then(reponse => reponse.json() as Article[])
                    .catch(this.handleError);
     }
 

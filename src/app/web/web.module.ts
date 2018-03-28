@@ -2,8 +2,8 @@ import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
 import { WebListComponent }      from './list.component';
-import { WebRoutingModule }       from './web-routing.module';
-
+import { WebRoutingModule }      from './web-routing.module';
+import { ArticleService }        from './list.service';
 
 @NgModule({
     imports: [
@@ -12,6 +12,7 @@ import { WebRoutingModule }       from './web-routing.module';
     ],
     declarations: [
         WebListComponent,
-    ]
+    ],
+    providers: [ ArticleService ]
 })
-export class WebModule { }
+export class WebModule {}
