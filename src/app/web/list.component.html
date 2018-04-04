@@ -1,5 +1,5 @@
 <article class="article pr oh">
-    <div class="webs pr oh bf">
+    <div class="pr oh bf">
         <ul class="webs-list pr oh" *ngIf="article.length; else elseNoData">
             <li *ngFor="let web of article" (click)="gotoDetail(web.routing)">
                 <time>{{web.createdAt}}</time><h2>{{web.title}}</h2>

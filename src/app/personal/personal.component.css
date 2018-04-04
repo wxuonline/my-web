@@ -1,3 +1,4 @@
+.aside{left: 760px;right: 40px;top: 0;z-index: 10;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);}
 .personal{width: 100%;height: auto;border-radius: 2px;overflow: hidden;padding: 15px;}
 
 .information{width: 100%;height: auto;padding-bottom: 15px;border-bottom: solid 1px #e6e6e6;}

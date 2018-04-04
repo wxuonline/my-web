@@ -1,7 +1,5 @@
 
-.article{width: 700px;height: auto;position: relative;overflow: hidden;}
-
-.webs{width: 100%;height: auto;}
+.article{margin-right: 320px;}
 .webs-list{width: 100%;height: auto;}
 ul.webs-list li{width: 100%;height: auto;background: #fff;position: relative;overflow: hidden;box-sizing: border-box;border-bottom: solid 1px #e6e6e6;padding: 20px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;cursor: pointer;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);-webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;}
 ul.webs-list li:hover{opacity: .8;}
