@@ -1,19 +1,13 @@
-
-<div class="main pr oh ma">
-    <article class="article pr oh">
-        <div class="webs pr oh bf">
-            <ul class="webs-list pr oh" *ngIf="article.length; else elseNoData">
-                <li *ngFor="let web of article" (click)="gotoDetail(web.routing)">
-                    <time>{{web.createdAt}}</time><h2>{{web.title}}</h2>
-                </li>
-            </ul>
-            <ng-template #elseNoData>
-                <div class="nodata pr oh bsb">暂无数据</div>
-            </ng-template>
-        </div>
-    </article>
-    <aside class="aside pa oh">
-        <my-personal></my-personal>
-    </aside>
-</div>
+<article class="article pr oh">
+    <div class="webs pr oh bf">
+        <ul class="webs-list pr oh" *ngIf="article.length; else elseNoData">
+            <li *ngFor="let web of article" (click)="gotoDetail(web.routing)">
+                <time>{{web.createdAt}}</time><h2>{{web.title}}</h2>
+            </li>
+        </ul>
+        <ng-template #elseNoData>
+            <div class="nodata pr oh bsb">暂无数据</div>
+        </ng-template>
+    </div>
+</article>
 

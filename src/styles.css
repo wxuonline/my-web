@@ -25,4 +25,4 @@ mark{background: none;}
 body{background: #f2f2f2;}
 /* body{background: #f2f2f2 url('./assets/images/background.png') no-repeat center bottom;background-attachment: fixed;} */
 
-.nodata{width: 100%;height: auto;padding: 30px 20px;color: #666;}
+.nodata{padding: 30px 20px;color: #666;}
