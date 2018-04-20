@@ -10,7 +10,7 @@ import { ArticleService } from '../list.service';
 @Component({
     selector: 'web-article',
     templateUrl: './article.component.html',
-    styleUrls: [ './article.component.css' ]
+    styleUrls: [ './article.component.less' ]
 })
 
 export class WebArticleComponent {

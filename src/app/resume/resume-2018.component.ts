@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
 @Component({
     selector: 'my-resume',
     templateUrl: './resume-2018.component.html',
-    styleUrls: [ './resume-2018.component.css' ]
+    styleUrls: [ './resume-2018.component.less' ]
 })
 
 export class Resume2018Component {
